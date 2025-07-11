@@ -9,6 +9,7 @@ export default async function connectDB(){
     }
     try {
         cached.conn = await cached.promise;
+        console.log("MongoDb Connected..")
     }catch (error){
         console.error("Error connecting to MongoDB:",error);
     }
